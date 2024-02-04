@@ -12,7 +12,7 @@ const questions = [
         },
         {
             name: 'description',
-            message: 'Describe your your project:',
+            message: 'Describe your project:',
             type: 'input'
         },
         {
@@ -23,7 +23,7 @@ const questions = [
         {
             name: 'usage',
             message: 'What are the instructions to use it?',
-            type: 'editor'
+            type: 'input'
         },
         {
             name: 'license',
