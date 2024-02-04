@@ -72,7 +72,13 @@ function writeToFile(projectTitle, data) {
 
 // function to initialize program
 function init() {
-
+    console.log('------Welcome to the README Generator!------');
+    inquirer.prompt(questions).then((answers) => {
+        console.log({answers});
+        const markdown = generateMarkdown(answers);
+        console.log({markdown});
+        writeToFile(answers.projectTitle, markdown);
+    })
 }
 
 // function call to initialize program
